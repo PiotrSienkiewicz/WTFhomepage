@@ -1,18 +1,14 @@
 body {
-    background: salmon;
+    background: #fefefe;
+    color: #333
 }
 
 .mainHeader {
     color: tomato;
 }
 
-.sectionHeader {
+.sectionHeader, .diaryHeader {
     color: #1460aa;
-    font-size: 64px;
-}
-
-.diaryHeader {
-    color: #6c1285;
 }
 
 .html {
@@ -21,8 +17,24 @@ body {
     
 .paragraph {
     color: darkblue;
+    padding: 0 0 0 16px;
+
 }
 .stopka {
-    color: #999999
-    ;
+    color: #999999;
+}
+.thirdHeader {
+    color: #0496ff;
+}
+.link {
+    color: #1A936f;
+}
+.about {
+    width: 700px;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
 }
