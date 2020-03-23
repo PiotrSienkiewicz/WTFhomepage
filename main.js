@@ -7,3 +7,9 @@ console.log(age);
 console.log(`Nazywam się ${name} i mam ${age}`);
 
 console.log ('siema siema ziomek ❤')
+
+const about = document.querySelector('.about__paragraph--js');
+
+console.log(about.innerHTML)
+
+about.innerHTML = 'PozdroJS'

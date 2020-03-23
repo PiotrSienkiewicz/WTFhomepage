@@ -3,7 +3,7 @@ body {
     color: #333
 }
 
-.mainHeader {
+.heading {
     color: tomato;
 }
 
@@ -18,7 +18,12 @@ body {
 .paragraph {
     color: darkblue;
     padding: 0 0 0 16px;
-
+}
+.about__paragraph {;
+    padding: 0 0 0 16px;
+}
+.about__paragraph--Color {
+color: #ff6700;
 }
 .stopka {
     color: #999999;
@@ -26,13 +31,16 @@ body {
 .thirdHeader {
     color: #0496ff;
 }
-.link {
+.navigation__link {
     color: #1A936f;
 }
-.about {
+.about__header {
+    color: #1460aa;
     width: 700px;
 }
-
+.about__link {
+    color: #1A936f;
+}
 .main {
     width: 100%;
     max-width: 700px;
