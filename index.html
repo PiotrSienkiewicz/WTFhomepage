@@ -5,19 +5,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link href="normalize.css" rel="stylesheet" type="text/css">
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<header>
-		<a class="navigation__link" href="index.html"> strona Główna</a>
-		<a class="navigation__link" href="podstrona.html"> Robienie HTML-a</a>
-		<a class="navigation__link" href="Podstrona 2.html">Robienie zdjęć</a>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li><a class="navigation__item" href="index.html"> Strona Główna</a>
+				</li>
+				<li><a class="navigation__item" href="podstrona.html"> Robienie HTML-a</a>
+				</li>
+				<li><a class="navigation__item" href="Podstrona 2.html">Robienie zdjęć</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 	<main class="main">
 		<header>
-			<h1 class="heading">
-				Piotr Sienkiewicz - Strona domowa - pozdro github 
+			<h1 class="header__title">
+				Piotr Sienkiewicz - Strona domowa - pozdro github
 			</h1>
 		</header>
 
@@ -30,47 +38,95 @@
 				<br>.
 				<a class="about__link" href="#Pamietniczek">Przejdź do pamiętniczka</a>
 			</p>
-		<p class="about__paragraph about__paragraph--Color about__paragraph--js">
-			testuje modyfikator	
-		</p>
+			<p class="about__paragraph about__paragraph--Color about__paragraph--js">
+				testuje modyfikator
+			</p>
 		</section>
 
 		</section>
 
 		<section id="Pamietniczek">
-			<h2 class="diaryHeader"> 	Pamiętniczek
+			<h2 class="diary__header"> Pamiętniczek
 			</h2>
-			<p class="paragraph">
+			<p class="day__paragraph">
 				Tutaj będziemy raportować na bierząco postęp prac i to jak ta strona będzie wyglądać póki co jest bieda
 				:D
 			</p>
-			<section class="html"> 
-				<h3 class="thirdHeader">
+			<section class="day">
+				<h3 class="day__header">
 					Jak stworzyć prawidłowego <i>HTML-a</i>?
 				</h3>
-				<p class="paragraph">
+				<p class="day__paragraph">
 					Mam nadzieje że Maciek pokaże jak to się robi bo jest to w miarę logiczne ale trzeba troche tego
 					porobić żeby skumać póki co <em> HTML</em> jest w miarę jasny <br>
-					<a class="link href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+					<a class="day__link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
 				</p>
-
-				<h3 class="thirdHeader">
+			</section>
+			<section class="day">
+				<h3 class="day__header">
 					Czy robienie zdjęć jest cieżkie?
 				</h3>
-				<p class="paragraph">
+				<p class="day__paragraph">
 					dużo prostsze jest tarcie chrzanu :D a tak serio to to czysto techniczna sprawa można nie mieć
 					umiejętności oka a umieć robić dobre zdjęcia albo mieć ładne modelki :D <br>
 					<a class="navigation__link" href="Podstrona 2.html">Przejdź do artykułu o robieniu zdjęć</a>
 				</p>
 			</section>
+			<section class="day">
+				<h3 class="day__header">
+					Jak uczyć się robienia zdjęć ?
+				</h3>
+				<p class="day__paragraph">
+					dużo ćwiczyć przedewszystkim nie szukaj wymówek że nie masz sprzętu wystarczy Ci teledon który mas
+					zzawsze pod reką <strong>NO EXCUSES!<strong> <br>
+							<a class="navigation__link" href="Podstrona 2.html">Przejdź do artykułu o robieniu zdjęć</a>
+				</p>
+			</section>
+		</section>
+		<section class="glossary">
+			<header>
+				<dl>
+					<dt>CSS</dt>
+					<dd>Style (to co widzisz jest ładne albo brzydkie)</dd>
+					<dt>HTML</dt>
+					<dd>treść + szkielet strony</dd>
+					<dt>Javascript</dt>
+					<dt>Es6</dt>
+					<dd>rzeczy których teraz ise uczę</dd>
+				</dl>
+			</header>
+		</section>
+
+		<section class="data">
+			<header class="data">
+				<table class="table">
+					<caption>Oceny z I semestru</caption>
+					<thead>
+						<tr>
+							<th>Imię nazwisko</th>
+							<th>Ocena</th>
+							<th>Data</th>
+						</tr>
+							<th>Piotr Sienkiewicz</th>
+							<th>3</th>
+							<th>24.03.2020</th>
+						<tr>
+							<th> Ktoś lepszy</th>
+							<th>5</th>
+							<th>24.03.2020</th>
+						</tr>	
+					</thead>
+
+				</table>
+			</header>
 		</section>
 
 	</main>
-	
+
 	<footer class="stopka">
 		Strona domowa Piotrka Sienkiewicza, wszystkie treści są efektem tworzenia szkolenia WTF: Co ten frontend
 	</footer>
-	<script src="main.js";>	</script>
+	<script src="main.js" ;>	</script>
 </body>
 
 </html>
