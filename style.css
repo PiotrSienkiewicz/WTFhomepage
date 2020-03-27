@@ -7,9 +7,8 @@ html {
 }
 
 body {
-    background:  linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%) fixed;
+    background: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%) fixed;
     ;
-
 }
 
 .about__header {
@@ -64,17 +63,12 @@ body {
     margin: 32px auto;
 }
 
-.site__header {
-    background: #fff;
-    box-sizing: border-box;
-    left: 0;
-    padding: 16px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navigation {}
 
 .navigation__item {
     display: inline;
@@ -87,6 +81,20 @@ body {
 .navigation__list {
     list-style: none;
     padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.site__header {
+    background: #fff;
+    box-sizing: border-box;
+    left: 0;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .stopka {
